@@ -1,7 +1,7 @@
 # git@github.com:nnuraip/Osnova.git
 from os import system
 system('clear')
-ssh_url =  "git@github.com:nnuraip/Osnova.git"
+ssh_url =  "git@github.com:nnuraip/MyFirstStepToProgramming.git"
 branch = "master"
 commit_message = "U"
 try:
