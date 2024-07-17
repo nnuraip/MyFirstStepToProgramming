@@ -26,25 +26,27 @@
 #       )
 
 
-a = { 8,3, 1,2,"atr"}
-b = {4,5,6,7,'a',3}
+# a = { 8,3,4, 1,2,"atr"}
+# b = {4,5,6,7,'a',3}
+# print(1 in a)
 # print(
 #     a.isdisjoint(b)
 # )
-print(a.union(b), a|b)
+# print(a.union(b), a|b)
 # print(
 #     a.intersection(b), a&b
 # )
 # print(a.difference(b), a-b)
 # print(b.difference(a))
-# print(a.symmetric_difference(b))
+# print(a.symmetric_difference(b), a^b)
 
-
+# print(a.issubset({8,3,4, 1,2,"atr",8,6,9}))  #проверяет, являетсч ли текущее множество подмножеством другого
+# print(a.issuperset({1,2,3}))  #проверяет, являетсч ли текущее множество надмножеством другого
 # my_set2= { 5 }
 # my_set2.add("hello")
 # my_set2.add("dfgvjn")
-
-
+# my_set2.discard(5) #если находит элемент, то удаляет его. а если нет, то ничего не делает
+# print(my_set2)
 # my_set2.remove("hello")
 # a= my_set2.pop()
 # print(f"I deleted {a}")
@@ -66,7 +68,11 @@ print(a.union(b), a|b)
 #         }
 # } 
 # print(users["000000000000"]['surname'])
+# users.pop("000000000000")
+# print(users)
 
+# users.popitem()
+# print(users)
 # cars = {
 #     'bmw': {
 #         'volume': 3.0, 
@@ -113,3 +119,56 @@ print(a.union(b), a|b)
 #         }
 # }
 # print(a[8]['city'])
+
+
+# person  = {
+#     "nurai":{
+#         'bank':{
+#             'balance': 1000,
+#             'card_number': '4400 4200 1313 3333',
+#             'recvisit': "789456123"  
+#         },
+#         'account':{
+#             "instagram":{
+#                 "login": "nnuraip",
+#                 "password": "123123"
+#             },
+#             "telegram":{
+#                 "login": "nnuraip",
+#                 "numb": "8777 526 3129"
+#             }
+#         },
+#         "info":{
+#             'first_name': 'nurai',
+#             'last_name':'paten',
+#             'age': 16
+#         },
+#         'address':'PARIS'
+        
+        
+# }}
+# nurai_info = person['nurai']['info']     
+# print("имя:     ", nurai_info['first_name'])
+# print("фамилия: ", nurai_info['last_name'])
+# print("возраст: ", nurai_info['age'])
+
+# print(person['nurai']['bank'])
+# person['nurai']['bank']['balance']+=1000
+# print(person['nurai']['bank']['balance'])
+
+# insta_login  = person['nurai']['account']["instagram"]["login"]
+# insta_password  = person['nurai']['account']["instagram"]["password"]
+
+# insta_login = 'qwerty'
+
+
+# person['nurai'].update({"address": "USA"})
+
+# person['nurai']["account"]['github'] = {"login": 'nnurai', 'password': 'asdf'}
+# person['nurai']["info"] = {"email": 'nnurai@gmail.com'}
+# print(person)
+# print("---------------------------------")
+# person['nurai'].pop("address")
+# print(person)
+
+

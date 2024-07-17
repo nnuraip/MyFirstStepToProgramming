@@ -145,3 +145,46 @@
 #     else:
 #      print("Повторите попытку")
 
+
+
+# my_list = ['используется для итерации по последовательности', 
+#            "В каждом проходе цикли переменная",
+#            "пайтон поддерживает два типа циклов"]
+# for i in my_list:
+
+#     if i.startswith("пайтон"):
+#         print(i)
+
+# o=[]
+# for i in my_list:
+#     o.extend(i.split())
+# print(o)
+
+# for letter in "banana":
+#     if letter =="a":
+#         print(letter.upper())
+#     else:
+#         print(letter)
+
+# word=''
+# for letter in "banana":
+#     if letter =="a":
+#         word+=letter.upper()
+#     else:
+#         word+=letter
+# print(word)
+
+# num=''
+# for i in range(10):
+#     num+=str(i)
+# print(num)
+
+
+# a={
+#             'balance': 1000,
+#             'card_number': {"name":'4400 4200 1313 3333'},
+#             'recvisit': "789456123" }
+
+# for k,v in a['card_number'].items():
+#     print(k)
+#     print(v)
