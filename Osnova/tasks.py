@@ -296,14 +296,14 @@
 # print(s(a))
 
 #  №2
-a= {
-	'a': 1,
-	'b': 2,
-	'c': 3, 
-	'd': 4,
-}
-def s(e):
-    for i in e
-    sum= list(e.values()**2)
-    return sum
-print(s(a))
+# a= {
+# 	'a': 1,
+# 	'b': 2,
+# 	'c': 3, 
+# 	'd': 4,
+# }
+# def s(e):
+#     for i in e.items():
+#     	sum= list(e.values()**2)
+# 	return sum
+# print(s(a))

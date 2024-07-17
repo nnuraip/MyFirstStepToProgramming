@@ -8,14 +8,12 @@ tovar = {
 my_list=[]
 def korzina_sum(user_tovar, kol, tovar):
     price = tovar.get(user_tovar)
-    if price is None:
-        return 'Нет такого товара'
-    
     return price * kol
 
 
 option = input('''
     нажмите на enter чтобы перейти к покупкам''')
+file = open("receipt.txt","w")
 while True:
 
     user_tovar = input("""выберите товар:
@@ -27,10 +25,10 @@ while True:
 
 """)
     receipt = {
-    1: "Утюг - 50.000kzt",
-    2: "Плойка - 25.000kzt",
-    3: "Стиральная машина - 89.000kzt",
-    4: "Расческа - 500kzt"
+    1: "Утюг               50.000kzt ",
+    2: "Плойка             25.000kzt ",
+    3: "Стиральная машина  89.000kzt ",
+    4: "Расческа           500kzt    "
     }
     if user_tovar in tovar:
         try:
@@ -38,11 +36,16 @@ while True:
         except:
             kol = int(input('укажите правильное кол-во: '))
         else:
-            my_list.append(f"{receipt[int(user_tovar)]}*{kol}={korzina_sum(user_tovar, kol, tovar)} ")
+            price1 = korzina_sum(user_tovar, kol, tovar)
+            my_list.append(price1)
+            file = open("receipt.txt","a")
+            file.write(f"{receipt[int(user_tovar)]}*{kol} = {price1} \n")
+
     elif user_tovar=="5":
-        print(my_list)
+        total_sum = 0
+        for i in my_list:
+            total_sum+=i
+        file.write(f"                          Итого:  {total_sum}kzt")
+        break
     else:
        print("такого товара нет")
-       break
-
-

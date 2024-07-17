@@ -146,3 +146,10 @@ my_list1 = ['nurai', True, False,1,2,3,4,5,{'name':'ooo'}, {1,32}]
 # # print(a)
 # # print(b)
 
+# a= input("введите строку:  ")
+# b = input("подстрока:  ")
+# index = a.find(b)
+# if index == -1:
+#     print("строка не содержит подстроку")
+# else:
+#     print("строка содержит подстроку")
