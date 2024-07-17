@@ -188,3 +188,45 @@
 # for k,v in a['card_number'].items():
 #     print(k)
 #     print(v)
+
+# Цикл while в Python используется для выполнения блока кода 
+# многократно до тех пор, пока условие остается истинным то есть True.
+
+# while условие:
+#     блок_кода
+
+# count = 0
+
+# while count < 10:
+#     print(count)
+#     count += 1
+
+# while True:
+#     print("Этот цикл будет выполняться вечно")
+
+
+# count = 0
+# while count < 10:
+#     if count == 5:
+#         break
+#     print(count)
+#     count += 1
+
+
+# count = 0
+
+# while count < 10:
+#     print(count)
+#     count += 1
+# else:
+#     print("Цикл завершен")
+
+# count = 0
+# while count < 10:
+#     count += 1
+#     if count % 2 == 0:
+#         continue
+#     print(count)
+
+
+ 
